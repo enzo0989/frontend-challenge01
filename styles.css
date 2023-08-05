@@ -6,18 +6,18 @@
 
 :root {
     /* summary colors */
-    --reaction-color:hsl(0, 100%, 67%);
+    --reaction-color: hsl(0, 100%, 67%);
     --reaction-color--background: hsla(0, 100%, 67%, 0.1);
 
-    --memory-color:hsl(39, 100%, 56%);
-    --memory-color--background:hsla(39, 100%, 56%, 0.1);
+    --memory-color: hsl(39, 100%, 56%);
+    --memory-color--background: hsla(39, 100%, 56%, 0.1);
 
-    --verbal-color:hsl(166, 100%, 37%);
-    --verbal-color--background:hsla(166, 100%, 37%, 0.1);
+    --verbal-color: hsl(166, 100%, 37%);
+    --verbal-color--background: hsla(166, 100%, 37%, 0.1);
 
 
-    --visual-color:hsl(234, 85%, 45%);
-    --visual-color--background:hsla(234, 85%, 45%, 0.1);
+    --visual-color: hsl(234, 85%, 45%);
+    --visual-color--background: hsla(234, 85%, 45%, 0.1);
 
     /**/
 
@@ -29,11 +29,15 @@
     --circle2: hsla(241, 72%, 46%, 0);
     /**/
 
-    /* neutral colors */ 
-    --neutral1: hsl(0, 0%, 100%); /* used for a small portion of text inside result */
-    --neutral2: hsl(221, 100%, 96%); /* write use here */
-    --neutral3: hsl(241, 100%, 89%); /* used for the majority of the text inside result */
-    --neutral4: hsl(224, 30%, 27%); /* used in the background of the continue button */
+    /* neutral colors */
+    --neutral1: hsl(0, 0%, 100%);
+    /* used for a small portion of text inside result */
+    --neutral2: hsl(221, 100%, 96%);
+    /* write use here */
+    --neutral3: hsl(241, 100%, 89%);
+    /* used for the majority of the text inside result */
+    --neutral4: hsl(224, 30%, 27%);
+    /* used in the background of the continue button */
 }
 
 @font-face {
@@ -50,12 +54,13 @@ body {
 
 
 .result {
-    background:linear-gradient(var(--background1), var(--background2));
+    background: linear-gradient(var(--background1), var(--background2));
     border-radius: 0 0 10% 10%;
     padding: 15px;
 }
 
-.result--container {  /* created to center the items inside of result*/
+.result--container {
+    /* created to center the items inside of result*/
     margin: 0 auto;
     width: 85%;
     padding: 20px;
@@ -74,7 +79,7 @@ body {
 }
 
 .result--score {
-    background:linear-gradient(var(--circle1), var(--circle2));
+    background: linear-gradient(var(--circle1), var(--circle2));
     width: 160px;
     height: 160px;
     margin: 10px 0;
@@ -105,4 +110,95 @@ body {
 .result--user-score {
     color: var(--neutral1);
     font-size: 4rem;
+}
+
+.summary {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.summary--score-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.summary--score {
+    border-radius: 10px;
+    height: 3rem;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.reaction {
+    color: var(--reaction-color);
+}
+
+.reaction--score {
+    background-color: var(--reaction-color--background);
+}
+
+.memory {
+    color: var(--memory-color);
+}
+
+.memory--score {
+    background-color: var(--memory-color--background);
+}
+
+.verbal {
+    color: var(--verbal-color);
+}
+
+.verbal--score {
+    background-color: var(--verbal-color--background);
+}
+
+.visual {
+    color: var(--visual-color);
+}
+
+.visual--score {
+    background-color: var(--visual-color--background);
+}
+
+.summary--score-total {
+    color: var(--neutral3);
+}
+
+.summary--score-strong {
+    font-weight: 700;
+    color: var(--neutral4);
+}
+
+.summary--header,
+.bold {
+    font-weight: 500;
+}
+
+.btn {
+    background-color: var(--neutral4);
+    color: var(--neutral1);
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 15px 0; 
+    margin: 10px 0;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
 }
