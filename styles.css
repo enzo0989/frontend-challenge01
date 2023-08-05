@@ -7,17 +7,17 @@
 :root {
     /* summary colors */
     --reaction-color:hsl(0, 100%, 67%);
-    --reaction-color--background: hsla(0, 100%, 67%, 0.2);
+    --reaction-color--background: hsla(0, 100%, 67%, 0.1);
 
     --memory-color:hsl(39, 100%, 56%);
-    --memory-color--background:hsla(39, 100%, 56%, 0.2);
+    --memory-color--background:hsla(39, 100%, 56%, 0.1);
 
     --verbal-color:hsl(166, 100%, 37%);
-    --verbal-color--background:hsla(166, 100%, 37%, 0.2);
+    --verbal-color--background:hsla(166, 100%, 37%, 0.1);
 
 
     --visual-color:hsl(234, 85%, 45%);
-    --visual-color--background:hsla(234, 85%, 45%, 0.2);
+    --visual-color--background:hsla(234, 85%, 45%, 0.1);
 
     /**/
 
@@ -45,4 +45,64 @@
 body {
     font-family: "Hanken Grotesk";
     font-size: 18px;
+}
+
+
+
+.result {
+    background:linear-gradient(var(--background1), var(--background2));
+    border-radius: 0 0 10% 10%;
+    padding: 15px;
+}
+
+.result--container {  /* created to center the items inside of result*/
+    margin: 0 auto;
+    width: 85%;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+.result--header,
+.result--score-total,
+.result--text {
+    color: var(--neutral3);
+}
+
+.result--score {
+    background:linear-gradient(var(--circle1), var(--circle2));
+    width: 160px;
+    height: 160px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.result--bold {
+    color: var(--neutral1);
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+
+.result--header {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.result--score-total,
+.result--text {
+    font-weight: 500;
+}
+
+.result--user-score {
+    color: var(--neutral1);
+    font-size: 4rem;
 }
