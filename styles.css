@@ -22,19 +22,24 @@
     /**/
 
     /*gradient colors */
-    --background1: hsl(252, 100%, 67%);
-    --background2: hsl(241, 81%, 54%);
+    --background--color1: hsla(297, 85%, 38%, 0.9);
+    --background--color2:hsla(289, 93%, 42%, 0.9);
+    --background--color3:hsla(284, 91%, 45%, 0.9);
 
-    --circle1: hsla(256, 72%, 46%, 1);
-    --circle2: hsla(241, 72%, 46%, 0);
+    --background--gradient: linear-gradient(to bottom, var(--background--color1), var(--background--color2), var(--background--color3));
+
+    --circle1: hsla(256, 72%, 46%, 0.9);
+    --circle2: hsla(297, 85%, 38%, 0.9);
+
+    --circle--gradient: linear-gradient(var(--circle1), var(--circle2));
     /**/
 
     /* neutral colors */
     --neutral1: hsl(0, 0%, 100%);
     /* used for a small portion of text inside result */
-    --neutral2: hsl(221, 100%, 96%);
+    --neutral2: hsl(220, 70%, 70%);
     /* write use here */
-    --neutral3: hsl(241, 100%, 89%);
+    --neutral3: hsl(241, 100%, 95%);
     /* used for the majority of the text inside result */
     --neutral4: hsl(224, 30%, 27%);
     /* used in the background of the continue button */
@@ -54,7 +59,7 @@ body {
 
 
 .result {
-    background: linear-gradient(var(--background1), var(--background2));
+    background: var(--background--gradient);
     border-radius: 0 0 10% 10%;
     padding: 15px;
 }
@@ -79,7 +84,7 @@ body {
 }
 
 .result--score {
-    background: linear-gradient(var(--circle1), var(--circle2));
+    background: var(--circle--gradient);
     width: 160px;
     height: 160px;
     margin: 10px 0;
@@ -176,7 +181,7 @@ body {
 }
 
 .summary--score-total {
-    color: var(--neutral3);
+    color: var(--neutral2);
 }
 
 .summary--score-strong {
@@ -200,6 +205,10 @@ body {
     border: none;
     text-align: center;
     cursor: pointer;
+}
+
+.btn:active {
+    background: var(--circle--gradient);
 }
 
 
