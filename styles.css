@@ -56,7 +56,25 @@ body {
     font-size: 18px;
 }
 
+@keyframes slideFromRight {
+    from {
+        transform: translateX(300px);
+    }
 
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes circleRotate {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 .result {
     background: var(--background--gradient);
@@ -233,4 +251,14 @@ body {
     .attribution {
         margin-top: 50px;
     }
+}
+
+.slideFromRight {
+    animation-name: slideFromRight;
+    animation-duration: 1s;
+}
+
+.circleRotate {
+    animation-name:circleRotate;
+    animation-duration: 1s;
 }
