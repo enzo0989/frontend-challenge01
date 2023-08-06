@@ -225,7 +225,8 @@ body {
     cursor: pointer;
 }
 
-.btn:active {
+.btn:active,
+.btn:focus  {
     background: var(--circle--gradient);
 }
 
