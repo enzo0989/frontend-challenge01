@@ -3,8 +3,7 @@
 This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
-
-- [Overview](#overview)
+[Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
@@ -15,8 +14,6 @@ This is a solution to the [Results summary component challenge on Frontend Mento
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -30,83 +27,48 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./design/final-result.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/enzo0989/frontend-challenge01
+- Live Site URL: https://enzo0989.github.io/frontend-challenge01/
 
 ## My process
 
+So, this is the first project that i do on my own and i i took the next steps to make it:
+1) first, i looked at the designs to decide how would i write the structure, how many div's i would need and what classes could i create to reuse some styles later.
+2) once i was satisfied with my ideas i started to write the HTML.
+3) once that was done i started to write the CSS, first a simple reset for the styles that come with the browser and variables for the colors.
+4) and finally, i wrote all the styles for the different elements of the page.   
+
+I may have wrote it like it was a really linear process but in reality it was more like jumping between different steps to edit or add something that i haven't though in the first time that i did that part, then, go back to the part that i was working in the first place, find something else that i wanted to change, change it and repeat this process till i finished all.  
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- basic HTML
+- vanilla CSS variables
+- flexbox
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+In this challenge in particular i learned how do hsl and hsla work, i used to only use colors with rgb or rgba but this time i wanted to expand a little bit and learned how do hsl works. It ain't much but i'm happy about it. Also, i learned how to make animations which it's great, in the past i used to look at animations and think that they were something difficult to make but they weren't that hard, at least at this point in my development.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I would love to learn how to use javaScript in the future, i think that would add a nice touch to a component like this and also CSS Grid, i have the feeling that something could have been made more easily with that tool. 
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [resource 1](https://www.example.com) - This help me to understand how to make animations.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@enzo0989](https://www.frontendmentor.io/profile/enzo0989)
+- instagram - [@stoic.mind](https://www.instagram.com/st0ic_mind/)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+If someone is reading this, Thank you for taking the time! sorry if something is wrote incorrectly, i'm learning english at the same time that i learn web development and my brain hurts :P
+I would really appreciate some feedback whether is about the CSS or the HTML. 
